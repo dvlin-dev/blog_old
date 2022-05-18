@@ -1,0 +1,69 @@
+对于前端项目开发过程中，偶尔会出现层叠数据结构的数组，我们需要将多层级数组转化为一级数组（即提取嵌套数组元素最终合并为一个数组），使其内容合并且展开。那么该如何去实现呢？
+
+需求:多维数组=>一维数组
+
+```javascript
+let ary = [1, [2, [3, [4, 5]]], 6] // -> [1, 2, 3, 4, 5, 6]
+let str = JSON.stringify(ary)
+```
+
+## 1. 调用 ES6 中的 flat 方法
+
+```javascript
+ary = arr.flat(Infinity)
+```
+
+## 2. replace + split
+
+```javascript
+ary = str.replace(/(\[|\])/g, '').split(',')
+```
+
+## 3. replace + JSON.parse
+
+```javascript
+str = str.replace(/(\[|\]))/g, '')
+str = '[' + str + ']'
+ary = JSON.parse(str)
+```
+
+## 4. 普通递归
+
+```javascript
+let result = []
+let fn = function (ary) {
+  for (let i = 0; i < ary.length; i++) {
+    let item = ary[i]
+    if (Array.isArray(ary[i])) {
+      fn(item)
+    } else {
+      result.push(item)
+    }
+  }
+}
+```
+
+## 5. 利用 reduce 函数迭代
+
+```javascript
+function flatten(ary) {
+  return ary.reduce((pre, cur) => {
+    return pre.concat(Array.isArray(cur) ? flatten(cur) : cur)
+  }, [])
+}
+let ary = [1, 2, [3, 4], [5, [6, 7]]]
+console.log(flatten(ary))
+```
+
+## 6：扩展运算符
+
+```javascript
+//只要有一个元素有数组，那么循环继续
+while (arr.some((item) => Array.isArray(item))) {
+  arr = [].concat(...arr)
+}
+```
+
+这是一个比较实用而且很容易被问到的问题，欢迎大家交流补充。
+
+more : [Array.prototype.flat()--MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
