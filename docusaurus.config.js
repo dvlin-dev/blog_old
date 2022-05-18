@@ -80,10 +80,10 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        copyright: `nice to meet you`,
-      },
+      // footer: {
+      //   style: 'dark',
+      //   copyright: `nice to meet you`,
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
