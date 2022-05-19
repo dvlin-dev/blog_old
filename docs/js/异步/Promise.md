@@ -29,7 +29,7 @@ Internal.prototype = redefineAll(PromiseConstructorPrototype, {
     }
   });
 ```
-![](./assets/1642059696265-da6f168c-fc80-4ec2-9cf7-665078319d41.png)
+![](../assets/1642059696265-da6f168c-fc80-4ec2-9cf7-665078319d41.png)
 ```javascript
 p = new Promise((resolve,reject) => {
         resolve("success")
