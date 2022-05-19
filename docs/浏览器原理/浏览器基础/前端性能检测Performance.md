@@ -6,7 +6,7 @@
 接口可以获取到当前页面中与性能相关的信息。它是 High Resolution Time API 的一部分，同时也融合了  Performance Timeline API、[Navigation Timing API](https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API)、 [User Timing API](https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API) 和 [Resource Timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API)
 该类型的对象可以通过调用只读属性 `[Window.performance](https://developer.mozilla.org/zh-CN/docs/Web/API/performance_property)` 来获得。
 
-> **注意：**除了以下指出的情况外，该接口及其成员在 `Web Worker` 中可用。此外，还需注意，performance 的创建和衡量都是同一环境下的。即，如果你在主线程（或者其他 worker）中创建了一个 performance，那么它在另外的 worker 线程中是不可用的；反之亦然。
+> 注意：除了以下指出的情况外，该接口及其成员在 `Web Worker` 中可用。此外，还需注意，performance 的创建和衡量都是同一环境下的。即，如果你在主线程（或者其他 worker）中创建了一个 performance，那么它在另外的 worker 线程中是不可用的；反之亦然。
 
 属性
 
