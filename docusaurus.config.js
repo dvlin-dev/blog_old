@@ -111,6 +111,11 @@ const config = {
                 label: "DesignMode",
                 docId: "designMode/index",
               },
+              {
+                type: "doc",
+                label: "algorithm",
+                docId: "algorithm/index",
+              },
             ],
           },
           {

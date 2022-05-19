@@ -1,5 +1,5 @@
 
-# <br />
+# 加载条nprogress配置
 [https://github.com/rstacruz/nprogress](https://github.com/rstacruz/nprogress)
 安装<br />将nprogress.js和nprogress.css添加到项目中。
 ```javascript

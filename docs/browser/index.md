@@ -1,2 +1,12 @@
-# 浏览器原理
-> 手机端 请打开侧边栏查看目录
+---
+title: browser
+slug: /browser/guides
+---
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```

@@ -1,6 +1,12 @@
 ---
-sidebar_position: 2
+title: js
+slug: /js/guides
 ---
-# js
-javascript 笔记     
-> 手机端 请打开侧边栏查看目录
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
