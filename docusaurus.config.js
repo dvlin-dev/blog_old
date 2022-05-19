@@ -59,7 +59,7 @@ const config = {
             items: [{
                 type: "doc",
                 label: "JavaScript",
-                docId: "JavaScript/index",
+                docId: "js/index",
               },
               {
                 type: "doc",
@@ -105,6 +105,11 @@ const config = {
                 type: "doc",
                 label: "Vue",
                 docId: "vue/index",
+              },
+              {
+                type: "doc",
+                label: "DesignMode",
+                docId: "designMode/index",
               },
             ],
           },
