@@ -26,7 +26,10 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          
+          editUrl: ({ docPath }) => {
+            return `https://github.com/bowlingq/blog/tree/master/docs/${docPath}`;
+          },
         },
         blog: {
           showReadingTime: true,
@@ -57,6 +60,21 @@ const config = {
                 type: "doc",
                 label: "JavaScript",
                 docId: "js/index",
+              },
+              {
+                type: "doc",
+                label: "browser",
+                docId: "browser/index",
+              },
+              {
+                type: "doc",
+                label: "network",
+                docId: "network/index",
+              },
+               {
+                type: "doc",
+                label: "engineering",
+                docId: "engineering/index",
               },
               {
                 type: "doc",
