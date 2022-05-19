@@ -78,6 +78,11 @@ const config = {
               },
               {
                 type: "doc",
+                label: "git",
+                docId: "git/index",
+              },
+              {
+                type: "doc",
                 label: "React",
                 docId: "react/index",
               },
