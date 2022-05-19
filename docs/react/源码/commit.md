@@ -1,0 +1,4 @@
+如果一个funtion 存在useEffect ，并且他的useEffect需要被触发的时候，那么这个useEffect 的回调会在beforemutation 阶段 先被以normal的优先级调度，而整个commit阶段是同步执行的，所以useEffect 的回调函数的执行实在commit阶段完成以后再异步执行的
+
+
+

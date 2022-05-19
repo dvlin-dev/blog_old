@@ -59,32 +59,52 @@ const config = {
             items: [{
                 type: "doc",
                 label: "JavaScript",
-                docId: "js/index",
+                docId: "JavaScript/index",
               },
               {
                 type: "doc",
-                label: "browser",
+                label: "Css",
+                docId: "css/index",
+              },
+              {
+                type: "doc",
+                label: "Browser",
                 docId: "browser/index",
               },
               {
                 type: "doc",
-                label: "network",
+                label: "Network",
                 docId: "network/index",
               },
                {
                 type: "doc",
-                label: "engineering",
+                label: "Engineering",
                 docId: "engineering/index",
               },
               {
                 type: "doc",
-                label: "git",
+                label: "Git",
                 docId: "git/index",
+              },
+              {
+                type: "doc",
+                label: "TS",
+                docId: "ts/index",
+              },
+              {
+                type: "doc",
+                label: "NodeJs",
+                docId: "nodejs/index",
               },
               {
                 type: "doc",
                 label: "React",
                 docId: "react/index",
+              },
+              {
+                type: "doc",
+                label: "Vue",
+                docId: "vue/index",
               },
             ],
           },
