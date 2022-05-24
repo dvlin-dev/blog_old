@@ -72,7 +72,7 @@ export default function Home(): JSX.Element {
       {/* <main>
         <HomepageFeatures />
       </main> */}
-      <Frame />
+      {/* <Frame /> */}
     </Layout>
   )
 }
