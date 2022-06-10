@@ -62,7 +62,7 @@ CSRF(Cross-site request forgery), 即跨站请求伪造，指的是黑客诱导�
 
 `SameSite`可以设置为三个值，`Strict`、`Lax`和`None`。
 
-**a.** 在`Strict`模式下，浏览器完全禁止第三方请求携带 Cookie。比如请求`sanyuan.com`网站只能在`sanyuan.com`域名当中请求才能携带 Cookie，在其他网站请求都不能。
+**a.** 在`Strict`模式下，浏览器完全禁止第三方请求携带 Cookie。比如请求`bowlingq.com`网站只能在`bowlingq.com`域名当中请求才能携带 Cookie，在其他网站请求都不能。
 
 **b.** 在`Lax`模式，就宽松一点了，但是只能在 `get 方法提交表单`况或者`a 标签发送 get 请求`的情况下可以携带 Cookie，其他情况均不能。
 
