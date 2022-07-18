@@ -14,11 +14,12 @@
 
 # useCallback
 
-1. 对于需要传递 **函数 **给子组件的场合，不用 useCallback 的话,子组件每次都会重新渲染;
+1. 对于需要传递 **函数**给子组件的场合，不用 useCallback 的话,子组件每次都会重新渲染;
 1. 在调用节流、防抖函数时。
 
 **1**
 ```javascript
+// Parent.jsx
 const [count1, setCount1] = useState(0);
 // ...
 const handleClickButton1 = () => {
@@ -42,7 +43,7 @@ const Button = ({ onClickButton, children }) => {
 
 export default React.memo(Button);
 ```
-Expensive是一个渲染成本非常高的组件，但点击Cheap组件也会导致Expensive重新渲染，即使dataB并未发生改变。原因就是onClickB被重新定义，导致 React 在 diff 新旧组件时，判定组件发生了变化。这时候useCabllback和memo就发挥了作用：
+在 Parent中 点击 Button ，即使 Button 内部没有什么变化，Button 仍会重新渲染，体现在 Math.random 返回的随机值上。原因就是 onClickButton 被重新定义，导致 React 在 diff 新旧组件时，判定组件发生了变化。这时候 useCabllback 和 memo 就发挥了作用：
 ```javascript
 const handleClickButton2 = useCallback(() => {
   setCount2(count2 + 1);
