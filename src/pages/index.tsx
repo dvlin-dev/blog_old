@@ -73,7 +73,7 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
       </main> */}
       {/* <Frame /> */}
-      <centet >
+      <centet style={{display:'flex',justifyContent:'center'}}>
 豫ICP备2020029001号-5</centet>
     </Layout>
   )
