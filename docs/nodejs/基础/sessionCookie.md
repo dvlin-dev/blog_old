@@ -16,7 +16,7 @@ app.use(session({
 
 **cookie: { secure: true }**是官方文档的配置，但是注意secure为true的时候，只有https链接才能session才能生效，开发环境下永远不会生效
 
-![image.png](../assets/1642060898215-fa9437a8-c044-4206-a46c-bff35829ce6a.png)
+![image.png](/Users/zhihu1/code/blog/docs/assets/1642060898215-fa9437a8-c044-4206-a46c-bff35829ce6a-a219983099ed78c47e7cd89bf6bb074a.png)
 赋值
 
 ```javascript
