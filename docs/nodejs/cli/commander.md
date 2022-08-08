@@ -4,12 +4,11 @@ title: commander 入门
 
 
 # 基础使用
-
 ## 创建实例
 
 ```js
-// const commander = require('commander');
-// const pkg = require('../package.json');
+const commander = require('commander');
+const pkg = require('../package.json');
 
 const { program } = commander;
 
@@ -20,11 +19,12 @@ program
 
 ```
 ## 其他 api
-
-// 打印出命令的 options
+```js
+打印出命令的 options
 console.log(program.opts());
 // 打印出帮助信息
 program.outputHelp();
+```
 
 ## 注册命令
 
@@ -45,7 +45,7 @@ clone
 // 创建一个新的命令
 const service = new commander.Command('service').description('启动一个服务');
 
-// 添加子命令
+添加子命令
 service
   .command('start [port]')
   .description('启动服务')
@@ -67,7 +67,7 @@ program.addCommand(service);
 
 ## 匹配所有命令
 ```js
-// 匹配所有不存在的命令，强制用户传递一个参数
+匹配所有不存在的命令，强制用户传递一个参数
 program
   .arguments('<cmd> [options]')
   .description('友情提示:', {
@@ -78,13 +78,14 @@ program
     console.log(cmd, options);
   });
 ```
-<> 代表必须，[] 代表可选。必须要有一个命令。
+```html
+ "<>" 代表必须，"[]" 代表可选。必须要有一个命令。
 -h 的时候会出现提示
-
+```
 ## 脚手架互相调用
 
 ```js
-// 执行新的命令，用于脚手架之间互相调用
+执行新的命令，用于脚手架之间互相调用
 program
   .command('install [name]', 'install package', {
     executableFile: 'bowling-cli', // 切换要执行的命令名称 
