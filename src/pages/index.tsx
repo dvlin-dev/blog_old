@@ -66,7 +66,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`bowlingQ`}
       description='Description will go into a meta tag in <head />'
     >
       <HomepageHeader />
@@ -74,6 +74,7 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
       </main> */}
       {/* <Frame /> */}
+      <a style={{display:'flex',justifyContent:'center'}} href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2020029001号-5</a>
     </Layout>
   )
 }
