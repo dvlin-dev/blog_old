@@ -7,7 +7,7 @@ title: commander 入门
 
 ## 创建实例
 
-```
+```js
 const commander = require('commander');
 const pkg = require('../package.json');
 
@@ -29,7 +29,7 @@ program.outputHelp();
 ## 注册命令
 
 方法一: command 注册命令
-```
+```js
 const clone = program.command('clone <source> [destination]');
 clone
   .description('克隆一个仓库')
@@ -41,7 +41,7 @@ clone
 
 方法二: addCommand 注册命令
 
-```
+```js
 // 创建一个新的命令
 const service = new commander.Command('service').description('启动一个服务');
 
@@ -66,7 +66,7 @@ program.addCommand(service);
 ```
 
 ## 匹配所有命令
-```
+```js
 // 匹配所有不存在的命令，强制用户传递一个参数
 program
   .arguments('<cmd> [options]')
@@ -83,7 +83,7 @@ program
 
 ## 脚手架互相调用
 
-```
+```js
 // 执行新的命令，用于脚手架之间互相调用
 program
   .command('install [name]', 'install package', {
@@ -94,7 +94,7 @@ program
   .alias('i');
 ```
 ## 高级定制 help 信息
-```
+```js
 program.helpInformation = function () {
   return '';
 };
@@ -105,7 +105,8 @@ program.on('--help', function () {
 再执行 -h 就不会出现之前的内容了，而是调用我们自定义的方法。
 ```
 ## 高级定制 实现 debug 模式
-```
+
+```js
 program.on('option:debug', () => {
   console.log('开启debug模式');
   if (program.debug) {
@@ -117,7 +118,7 @@ program.on('option:debug', () => {
 ```
 ## 高级定制 对所有未知命令监听
 当输入未知命令时，执行自定义的回调。
-```
+```js
 program.on('command:*', (obj) => {
   const commands = program.commands.map((command) => command.name());
   console.log(`可用命令为${commands.join(',')}`);
