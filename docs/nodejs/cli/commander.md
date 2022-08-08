@@ -8,8 +8,8 @@ title: commander 入门
 ## 创建实例
 
 ```js
-const commander = require('commander');
-const pkg = require('../package.json');
+// const commander = require('commander');
+// const pkg = require('../package.json');
 
 const { program } = commander;
 
