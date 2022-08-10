@@ -61,12 +61,14 @@ https://bowlingq.com/?xss=<script>alert('你被攻击了') </script>
 转码之后变成：
 
 ```javascript
-<script>alert('你完蛋了')</script>
+&lt;script&gt;alert(&#39;你完蛋了&#39;)&lt;/script&gt;
 ```
 
 或者利用关键词过滤 将 script 标签删除。
 
 ## 利用 CSP
+
+[CSP MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
 
 CSP，即浏览器中的内容安全策略，它的核心思想就是服务器决定浏览器加载哪些资源，具体来说可以完成以下功能:
 
