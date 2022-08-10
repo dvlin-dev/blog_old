@@ -103,7 +103,7 @@ HTTP/1.1和之后版本中，如果要使用hop-by-hop首部，需提供Connecti
 
 首部字段Cache-Control能够控制缓存的行为:
 
-![首部字段Cache-Control能够控制缓存的行为](/Users/zhihu1/code/blog/docs/assets/image-20220809104419636.png)
+![首部字段Cache-Control能够控制缓存的行为](../assets/image-20220809104419636.png)
 
 指令的参数是可选的，多个指令之间通过“,”分隔。首部字段Cache-Control的指令可用于请求及响应时。
 
