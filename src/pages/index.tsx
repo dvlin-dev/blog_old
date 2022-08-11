@@ -73,7 +73,7 @@ export default function Home(): JSX.Element {
       {/* <main>
         <HomepageFeatures />
       </main> */}
-      {/* <Frame /> */}
+      <Frame />
       <a style={{display:'flex',justifyContent:'center'}} href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2020029001号-5</a>
     </Layout>
   )
