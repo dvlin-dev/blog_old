@@ -28,7 +28,7 @@ function Frame(): JSX.Element {
         s0 = document.getElementsByTagName('script')[0];
       s1.async = true;
       s1.src =
-        'https://www.zhangbaolin001.cn/upload/2022/05/CloudCourierInit-bd2daf834a7e44abb619ff1f98c998ae.js';
+        'https://zhangbaolin001.cn//upload/2022/08/init-12ce6db33326439d996faf8b3996b8f0.js';
       s1.charset = 'UTF-8';
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
