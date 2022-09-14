@@ -24,11 +24,12 @@ function Frame(): JSX.Element {
       div.style.setProperty('bottom', '0', 'important');
       let body = document.querySelector('body');
       body.appendChild(div);
+      window.__clour_courier_token__ = '_C1rRfJwJmWKTcJ30kSnNly9u9eeb2OI6tihc8KX_eg=';
       var s1 = document.createElement('script'),
         s0 = document.getElementsByTagName('script')[0];
       s1.async = true;
       s1.src =
-        'https://zhangbaolin001.cn//upload/2022/08/init-12ce6db33326439d996faf8b3996b8f0.js';
+        'https://cloudcourier.cn//js/deployscript.bundle.js';
       s1.charset = 'UTF-8';
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
