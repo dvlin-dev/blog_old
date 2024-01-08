@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '我的毕业作品展示',
+  title: '我的笔记分享',
   tagline: '',
   url: 'https://www.zhangbaolin.top',
   baseUrl: '/',
