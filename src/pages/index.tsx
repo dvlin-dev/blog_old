@@ -57,6 +57,7 @@ function HomepageHeader() {
           >
             Read my diary
           </Link>
+          <div className="sharethis-inline-share-buttons"></div>
         </div>
       </div>
     </header>
