@@ -29,11 +29,11 @@ function Frame(): JSX.Element {
         s0 = document.getElementsByTagName('script')[0];
       s1.async = true;
       s1.src =
-        'https://cloudcourier.cn/scripts/deployscript.js';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
+        'https://platform-api.sharethis.com/js/sharethis.js#property=6606b93f9ed0c100195332d6&product=inline-share-buttons';
       s0.parentNode.insertBefore(s1, s0);
     })();`
+
+    // <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6606b93f9ed0c100195332d6&product=inline-share-buttons' async='async'></script>
     document.querySelector('body').appendChild(script)
   }
   return null
